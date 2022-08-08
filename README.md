@@ -13,6 +13,10 @@ Next, you need to load the abi of the contract you want to interact with:
 
 Enter the contract address and press "Search":
 
+```
+0:dfc795cd2f3d4934d112eef351e50e60721cd6232950208023e422e7a5a3cc44
+```
+
 ![Enter the contract address](img/4.jpg)
 
 ---
