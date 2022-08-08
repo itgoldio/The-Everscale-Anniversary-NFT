@@ -33,27 +33,27 @@ number_of_awards = 200 + 100 + 50 + 2 + 1 = 353
 ---
 
 <h2>What are the chances of winning the lottery?</h2>
-    You can calculate the chances of winning the lottery using the following formula:
+You can calculate the chances of winning the lottery using the following formula:
 
-    ```
-        number_of_awards / tickets_not_played
-    ```
-    Number of awards can be obtained by calling getter "_awards" and adding up the number of each award:
+```
+    number_of_awards / tickets_not_played
+```
+Number of awards can be obtained by calling getter "_awards" and adding up the number of each award:
 
-    Choose "_awards" and press "Run local"
-    ![_awards](img/6.jpg)
+Choose "_awards" and press "Run local"
+![_awards](img/6.jpg)
 
-    Next, you need to calculate the number_of_awards:
+Next, you need to calculate the number_of_awards:
 
-    ```
-    number_of_awards = 200 + 100 + 50 + 2 + 1 = 353
-    ```
+```
+number_of_awards = 200 + 100 + 50 + 2 + 1 = 353
+```
 
-    Tickets not played can be obtained by calling the method "getTotalParticipants":
-    ![Load abi](img/5.jpg)
+Tickets not played can be obtained by calling the method "getTotalParticipants":
+![Load abi](img/5.jpg)
 
-    Thus, the probability of winning is equal to: 
-    
-    ```
-    353/4000 = 0,08825
-    ```
+Thus, the probability of winning is equal to: 
+
+```
+353/4000 = 0,08825
+```
