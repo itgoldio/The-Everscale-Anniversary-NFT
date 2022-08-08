@@ -1,0 +1,132 @@
+{
+	"ABI version": 2,
+	"version": "2.2",
+	"header": ["pubkey", "time", "expire"],
+	"functions": [
+		{
+			"name": "getTotalParticipants",
+			"inputs": [
+				{"name":"answerId","type":"uint32"}
+			],
+			"outputs": [
+				{"name":"totalParticipants","type":"uint128"}
+			]
+		},
+		{
+			"name": "getPrize",
+			"inputs": [
+				{"name":"id","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "nftAuthor",
+			"inputs": [
+				{"name":"answerId","type":"uint32"}
+			],
+			"outputs": [
+				{"name":"addr","type":"address"}
+			]
+		},
+		{
+			"name": "royalty",
+			"inputs": [
+				{"name":"answerId","type":"uint32"}
+			],
+			"outputs": [
+				{"name":"royalties","type":"map(address,uint8)"}
+			]
+		},
+		{
+			"name": "getFeesInfo",
+			"inputs": [
+				{"name":"answerId","type":"uint32"}
+			],
+			"outputs": [
+				{"name":"totalCreationPrice","type":"uint128"},
+				{"name":"mintingFee","type":"uint128"},
+				{"name":"methodsCallsFee","type":"uint128"},
+				{"name":"minimalGasAmount","type":"uint128"},
+				{"name":"remainOnNft","type":"uint128"},
+				{"name":"indexDeployValue","type":"uint128"},
+				{"name":"indexDestroyValue","type":"uint128"},
+				{"name":"deployIndexBasisValue","type":"uint128"},
+				{"name":"nftBurnFee","type":"uint128"}
+			]
+		},
+		{
+			"name": "totalSupply",
+			"inputs": [
+				{"name":"answerId","type":"uint32"}
+			],
+			"outputs": [
+				{"name":"count","type":"uint128"}
+			]
+		},
+		{
+			"name": "supportsInterface",
+			"inputs": [
+				{"name":"answerId","type":"uint32"},
+				{"name":"interfaceID","type":"uint32"}
+			],
+			"outputs": [
+				{"name":"value0","type":"bool"}
+			]
+		},
+		{
+			"name": "_awards",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"numOfWinners","type":"uint128"},{"name":"winningAmount","type":"uint128"}],"name":"_awards","type":"tuple[]"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+		{
+			"name": "NftAwarded",
+			"inputs": [
+				{"name":"nft","type":"address"},
+				{"name":"random","type":"uint128"},
+				{"name":"winningAmount","type":"uint128"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "OwnershipTransferred",
+			"inputs": [
+				{"name":"oldOwner","type":"uint256"},
+				{"name":"newOwner","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "NftCreated",
+			"inputs": [
+				{"name":"id","type":"uint256"},
+				{"name":"nft","type":"address"},
+				{"name":"owner","type":"address"},
+				{"name":"manager","type":"address"},
+				{"name":"creator","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "NftBurned",
+			"inputs": [
+				{"name":"id","type":"uint256"},
+				{"name":"nft","type":"address"},
+				{"name":"owner","type":"address"},
+				{"name":"manager","type":"address"}
+			],
+			"outputs": [
+			]
+		}
+	]
+}
